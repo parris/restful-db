@@ -1,0 +1,30 @@
+{
+  "name": "restful-db",
+  "version": "0.0.1",
+  "description": "rest API middleware for express that directly talks to a DB.",
+  "main": "restful_db.coffee",
+  "scripts": {
+    "test": "mocha *.spec.coffee **/*.spec.coffee",
+    "debug-test": "mocha debug *.spec.coffee **/*.spec.coffee}",
+    "build": "coffee -o ./  -c src/restful-db.coffee"
+  },
+  "keywords": [
+    "rest",
+    "rest-api",
+    "database",
+    "middleware"
+  ],
+  "author": "Parris Khachi",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "should": "~4.0.0",
+    "coffee-script": "~1.7.1",
+    "mocha": "~1.20.0",
+    "express": "~4.4.1"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "mixablejs": "0.0.1",
+    "mongoskin": "~1.4.4"
+  }
+}
